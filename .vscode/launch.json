@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "sistemamedico",
+            "cwd": "sistemamedico",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sistemamedico (profile mode)",
+            "cwd": "sistemamedico",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sistemamedico (release mode)",
+            "cwd": "sistemamedico",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

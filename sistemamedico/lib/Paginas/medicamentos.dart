@@ -117,13 +117,21 @@ class _MedicamentosStateview extends State<Medicamentosview> {
                       },
                     ),
                     ElevatedButton(
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 48, 211, 240))),
                       child: const Text("Agregar Nuevo"),
                       onPressed: () {
                         _showmedicamentosagregar(context);
                       },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        primary: Colors.blueGrey,
+                        onPrimary: Colors.white,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
                     ),
                   ],
                 ),

@@ -76,6 +76,12 @@ flutter:
       - assets/images/Leslie.png
       - assets/images/Mauricio.png
       - assets/images/Mapa.png
+      - assets/images/bayer.png
+      - assets/images/johsom.png
+      - assets/images/medifarma.png
+      - assets/images/nestle.png
+      - assets/images/unilever.png
+      - assets/images/colgate.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

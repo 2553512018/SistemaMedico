@@ -121,9 +121,6 @@ class _AgregarMedicamentosState extends State<AgregarMedicamentos> {
                 Row(
                   children: [
                     ElevatedButton(
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 48, 211, 240))),
                       child: const Text("Guardar"),
                       onPressed: () async {
                         int lastId = await _getLastId();
@@ -144,15 +141,34 @@ class _AgregarMedicamentosState extends State<AgregarMedicamentos> {
                         fechaController.clear();
                         proveedorController.clear();
                       },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        primary: Colors.blueGrey,
+                        onPrimary: Colors.white,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
                     ),
                     ElevatedButton(
-                      style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all<Color>(
-                              const Color.fromARGB(255, 48, 211, 240))),
                       child: const Text("Volver"),
                       onPressed: () {
                         _showmedicamentos(context);
                       },
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        primary: Colors.blueGrey,
+                        onPrimary: Colors.white,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 20,
+                          vertical: 10,
+                        ),
+                      ),
                     ),
                   ],
                 )
